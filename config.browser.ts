@@ -1,4 +1,4 @@
-import { samplePhrases } from "./prompts/movie-critic";
+import { samplePhrases } from "./prompts/WebsiteTOV.ts";
 // import { samplePhrases } from "./prompts/tour-guide";
 
 export const appConfig = {
