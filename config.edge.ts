@@ -14,7 +14,7 @@ export const appConfig: AppConfig = {
 
   // The maximum length in characters of each message sent to the API
   // You should also set this in the config.browser.ts file.
-  maxMessageLength: 1000,
+  maxMessageLength: 4000,
 
   // The config values sent to the OpenAI API
   // You should not need to change these values
@@ -27,7 +27,7 @@ export const appConfig: AppConfig = {
   // This can be a plain string if you'd prefer, or you can use
   // information from the request or context to generate it.
   systemPrompt: (_req, context) => `${prompt}
-Respond with valid markdown. Put movie names in bold. Knowledge cutoff September 2021.
+Respond with valid markdown.
 Current date: ${new Date().toDateString()}.
 User location: ${context.geo.city}, ${context.geo.country}`,
 };
